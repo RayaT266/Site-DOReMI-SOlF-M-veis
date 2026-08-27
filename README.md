@@ -18,13 +18,20 @@ O trabalho não nasceu pronto — ele foi construído em camadas, seguindo a ord
 Uma decisão importante tomada ao longo do processo foi resistir à tentação de usar <table> para posicionar os campos dos formulários (prática comum há alguns anos) e resolver tudo com float, display: block e classes CSS reutilizáveis. É mais trabalhoso de acertar no início, mas deixa a estrutura HTML mais limpa e mais fácil de estilizar depois.
 
 # Estrutura de arquivos
-├── DoremisolfaMoveis.html   # página inicial
-├── Doremi.html              # catálogo de camas
-├── Solfa.html               # catálogo de sofás
-├── Encomendas.html          # formulário de pedido
-├── Cadastro.html            # formulário de cadastro de cliente
-├── style.css                # todo o estilo do site, em um único arquivo
-└── Imagens/                 # logos e fotos dos produtos
+  ├── DoremisolfaMoveis.html   # página inicial
+  
+  ├── Doremi.html              # catálogo de camas
+
+  ├── Solfa.html               # catálogo de sofás
+
+  ├── Encomendas.html          # formulário de pedido
+
+  ├── Cadastro.html            # formulário de cadastro de cliente
+
+  ├── style.css                # todo o estilo do site, em um único arquivo
+
+  └── Imagens/                 # logos e fotos dos produtos
+  
 
 Todas as páginas compartilham o mesmo header e nav, e apontam para o mesmo style.css — só o conteúdo de dentro da section muda de uma para outra.
 

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOReMI SOlFÁ Móveis - Encomendas</title>
+    <link href="https://fonts.googleapis.com/css?family=Stoke" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img class="imgLogo" src="Imagens/DoremisofaLogoTopo.png" alt="Logo da Doremisolfa Móveis">
+        <address class="ender">
+            Tv. La Donna e Mobile, 134<br>
+            Tel: (21) 91224-4881<br>
+            contato@doremisolfa.com.br
+        </address>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="DoremisolfaMoveis.html" target="_blank">Apresentação</a></li>
+            <li><a href="Doremi.html" target="_blank">Camas</a></li>
+            <li><a href="Solfa.html" target="_blank">Sofas</a></li>
+            <li><a href="Encomendas.html" target="_blank">Encomendas</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <form action="#" method="post">
+        <div class="FormBox">
+            <h1 class="titulo">Encomendas</h1>
+
+            <!-- IDENTIFICAÇÃO -->
+            <fieldset class="FSLinhaInteira">
+                <legend>Identificação</legend>
+                <div class="LinhaForm">
+                    <div class="ColEsq" id="loginCad">
+                        <label class="LabBox" for="email">E-mail:</label>
+                        <input class="InpBoxGnd" id="idEmail" type="email" name="email" required>
+                    </div>
+                    <div class="ColDir" id="senhaCad">
+                        <label class="LabBox" for="senha">Senha:</label>
+                        <input class="InpBoxMed" id="senha" type="password" name="senha" required>
+                    </div>
+                </div>
+                <p><em>Se você ainda não tem cadastro clique <a href="Cadastro.html">aqui</a>!</em></p>
+            </fieldset>
+
+            <!-- LISTA DE COMPRAS -->
+
+            <fieldset class="FSLinhaInteira">
+                <legend>Lista de Compras</legend>
+                <div class="LinhaForm">
+                    <div class="ColEsq" id="lisSelProd">
+                        <label class="LabBox" for="produto">Produtos:</label>
+                        <select class="InpBoxGnd" id="selProduto" name="produto">
+                            <option value="">-----</option>
+                            <optgroup label="Cama Solteiro">
+                                <option value="camaSolteiroSimples">Simples 104 x 104 x 202</option>
+                                <option value="camaSolteiroBicama">Bicama 70 x 87 x 193</option>
+                            </optgroup>
+                            <optgroup label="Cama Casal">
+                                <option value="camaCasalSimples">Simples 108 x 154 x 210</option>
+                                <option value="camaCasalGavetas">Com gavetas 48 x 145 x 195</option>
+                            </optgroup>
+                            <optgroup label="Sofá 2 lug.">
+                                <option value="sofa2Retratil">Retrátil 95 x 87-126 x 180 Linho Cru</option>
+                                <option value="sofa2Cama">Sofá-cama 95 x 97-150 x 180 Linho</option>
+                            </optgroup>
+                            <optgroup label="Sofá 3 lug.">
+                                <option value="sofa3Retratil">Retrátil 108 x 95-155 x 200 Suede</option>
+                                <option value="sofa3Retro">Retrô 80 x 76 x 196 Veludo</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="ColDir" id="btnIncluir">
+                        <input type="button" value="Incluir">
+                    </div>
+                </div>
+
+                <div class="LinhaForm" id="boxPedidos">
+                    <textarea class="InpBoxGnd" id="lisPedArea" name="listaCompras" readonly></textarea>
+                </div>
+
+                <div class="LinhaForm">
+                    <label for="valor">Valor: R$</label>
+                    <input class="InpBoxMed" id="valor" type="text" name="valor" readonly>
+                </div>
+            </fieldset>
+
+            <!-- DADOS DO CARTÃO -->
+            
+                <fieldset class="FSLinhaInteira">
+                    
+                     <legend>Dados do Cartão</legend>
+                    <div class="FormFSColEsq" id="numCartao">
+                        <label class="LabBox" for="num1">Número:</label>
+                        <input class="numQD" id="num1" type="number" name="num1" min="0" max="9999">
+                        <input class="numQD" type="number" name="num2" min="0" max="9999">
+                        <input class="numQD" type="number" name="num3" min="0" max="9999">
+                        <input class="numQD" type="number" name="num4" min="0" max="9999">
+                    </div>
+                    <div class="FormFSColEsq" id="valCartao">
+                        <label class="LabBox" for="mesValidade">Validade:</label>
+                        <input class="numDD" id="mesValidade" type="number" name="mesValidade" min="1" max="12" value="8">
+
+                        /
+
+                        <input class="numDD" type="number" name="anoValidade" min="2026" max="2040" value="2026">
+                    </div>
+                    <div class="FormFSColEsq" id="boxParcel">
+                        <label class="LabBox" for="parcelas">Parcelas:</label>
+                        <input class="numDD" id="parcelas" type="number" name="parcelas" min="1" max="12" value="1">
+                        
+                        x Sem Juros
+                    </div>
+             
+
+                <fieldset class="ColDir" id="fsBandeira">
+
+                    <legend>Bandeira:</legend>
+                    <input type="radio" id="visa" name="bandeira" value="visa" checked>
+
+                    <label for="visa">Visa</label><br>
+                    <input type="radio" id="master" name="bandeira" value="master">
+
+                    <label for="master">Master</label><br>
+                    <input type="radio" id="elo" name="bandeira" value="elo">
+                    <label for="elo">Elo</label>
+                    
+                </fieldset>
+     
+    </fieldset>
+<br><br>
+            <div class="botoes">
+                <input type="submit" value="Confirmar">
+                <input type="reset" value="Limpar">
+            </div>
+      
+   
+        </div>
+        </form>
+    </section>
+</body>
+</html>

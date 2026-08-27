@@ -1,0 +1,223 @@
+
+header { display: block; margin-bottom: 1px; }
+nav    { display: block; width: 20%; float: left; }
+section{ display: block; width: 70%; float: right; }
+
+body {
+  background-color: #E6F0B5;
+  color: #E53646;
+  font-size: 16px;
+  font-family: 'Stoke', 'Lucida Bright', 'Liberation Serif', serif;
+}
+
+a {
+  text-decoration: none;
+  color: #D53646;
+  text-decoration: underline;
+}
+a:visited {
+  color: #D53636;
+}
+
+ol, ul {
+  line-height: 200%;
+}
+
+/* endereço/telefone/e-mail (tag <address>) */
+.ender {
+  float: right;
+  text-align: right;
+  line-height: 140%;
+  font-size: 14px;
+  font-family: 'Karla', 'Verdana', 'Ubuntu', sans-serif;
+}
+
+/* logo do canto superior esquerdo */
+.imgLogo {
+  border-bottom: 4px solid #E53646;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+}
+
+.apres {
+  text-align: center;
+  font-size: 16px;
+}
+
+
+nav ul {
+  color: #E53646;
+  line-height: 230%;
+  margin-top: 40px;
+  list-style-type: square;
+}
+
+
+   /*Página de Camas (Doremi.html)*/
+.titulo {
+  text-align: center;
+    color: #E53646;
+}
+
+.listaCama {
+  width: 350px;
+  color: #000066;
+  background-color: #FFFFBB;
+  font-size: 12px;
+  padding: 10px 10px 10px 30px;
+  border: 3px solid #226699;
+  list-style-type: square;
+  margin: 0px auto 10px auto;
+}
+
+.listaCama ol {
+  color: #000066;
+  list-style-type: lower-roman;
+}
+
+.preco {
+  color: #CC0000;
+}
+
+/* Página de Sofás (Solfa.html) */
+.tabSofa {
+  border-collapse: collapse;
+  font-size: 12px;
+  color: #000066;
+  background-color: #FFFFBB;
+  margin: 5px auto 15px auto;
+  font-family: 'Stoke', 'Lucida Bright', 'Liberation Serif', serif;
+}
+
+.tabSofa th,
+.tabSofa td {
+  border: 3px solid #226699;
+}
+
+.tabSofa th {
+  padding: 6px 12px 6px 12px;
+  height: 30px;
+}
+
+.imgSofa {
+  width: 100px;
+  height: 62px;
+}
+
+
+.tabSofa .titulo {
+  color: #FFFFFF;
+  background-color: #228855;
+  font-size: 14px;
+}
+
+.linTH {
+  color: #FFFFFF;
+  background-color: #22AA55;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+.colTH {
+  color: #FFFFFF;
+  background-color: #2299DD;
+  text-align: left;
+}
+
+/*  Classes de formulário (Encomendas.html / Cadastro.html) */
+.FormBox {
+  width: 530px;
+  padding: 6px 6px 15px 6px;
+  text-align: center;
+  color: #000066;
+  background-color: #FFFFBB;
+  border: 3px solid #226699;
+  font-size: 12px;
+  font-family: 'Stoke', 'Lucida Bright', 'Liberation Serif', "serif";
+  margin: 20px auto;
+}
+
+.FSLinhaInteira {
+  width: 500px;
+  text-align: left;
+  display: inline-block;
+}
+
+.FSColEsq {
+  width: 210px;
+  text-align: center;
+  float: left;
+}
+
+.FSColDir {
+  width: 210px;
+  text-align: center;
+  float: right;
+  
+}
+
+.LinhaForm {
+  margin: 0px;
+  height: 30px;
+  padding: 6px 3px 0px 3px;
+}
+
+.ColEsq {
+  width: 180px;
+  float: left;
+  display: block;
+}
+
+.ColDir {
+  width: 180px;
+  float: right;
+  display: block;
+}
+
+.LabBox {
+  width: 80px;
+  float: left;
+  display: flex;
+}
+
+.botoes {
+  text-align: right;
+  margin: 20px 10px 0px 10px;
+}
+
+.InpBoxGnd {
+  width: 384px;
+  float: right;
+  display: block;
+}
+
+.InpBoxMed {
+  width: 80px;
+  float: right;
+  display: block;
+}
+
+.numDD { width: 50px;}
+.numQD { width: 50px; }
+
+/*  Identificadores da página de Encomendas */
+#loginCad    { width: 260px; }
+#idEmail     { width: 160px; }
+#senhaCad    { width: 180px; }
+#lisSelProd  { width: 370px; }
+#selProduto  { width: 75%; }
+#btnIncluir  { width: 70px; }
+#boxPedidos  { height: 100px; }
+#lisPedArea  { height: 90%; width: 100%; }
+#fsBandeira  { width: 80px; height: 80px; text-align: center;}
+#numCartao   { width: 330px; height: 35px; padding-top: 10px; }
+#valCartao   { width: 230px; height: 35px; }
+#boxParcel   { width: 230px; height: 30px; }
+
+/* Identificadores da página de Cadastro*/
+#linhaEnder { height: 50px; }
+#inpEnder   { width: 394px; height: 80px;}
+#fsDataNasc{ height: 80px; text-align: left; display: inline-block; }
+    #fsSexo{ height: 80px; text-align: right; display: inline-block; }
+    #loginLogin{ width: 394px; height: 35px; padding-top: 10px; }

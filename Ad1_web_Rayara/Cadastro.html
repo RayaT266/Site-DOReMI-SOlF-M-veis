@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOReMI SOlFÁ Móveis - Cadastro</title>
+    <link href="https://fonts.googleapis.com/css?family=Stoke" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img class="imgLogo" src="Imagens/DoremisofaLogoTopo.png" alt="Logo da Doremisolfa Móveis">
+        <address class="ender">
+            Tv. La Donna e Mobile, 134<br>
+            Tel: (21) 91224-4881<br>
+            contato@doremisolfa.com.br
+        </address>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="DoremisolfaMoveis.html" target="_blank">Apresentação</a></li>
+            <li><a href="Doremi.html" target="_blank">Camas</a></li>
+            <li><a href="Solfa.html" target="_blank">Sofas</a></li>
+            <li><a href="Encomendas.html" target="_blank">Encomendas</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <form action="#" method="post">
+        <div class="FormBox">
+            <h1 class="titulo">Cadastro</h1>
+
+            <!-- IDENTIFICAÇÃO -->
+            <fieldset class="FSLinhaInteira">
+                <legend>Identificação</legend>
+
+                <div class="LinhaForm">
+                    <label class="LabBox" for="email">E-mail:</label>
+                    <input class="InpBoxGnd" id="email" type="email" name="email" required>
+                </div>
+
+                <div class="LinhaForm">
+                    <div class="ColEsq">
+                        <label class="LabBox" for="senha">Senha:</label>
+                        <input class="InpBoxMed" id="senha" type="password" name="senha" required>
+                    </div>
+                    <div class="ColDir">
+                        <label class="LabBox" for="confirma_senha">Confirme:</label>
+                        <input class="InpBoxMed" id="confirma_senha" type="password" name="confirma_senha" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- DADOS PESSOAIS -->
+            <fieldset class="FSLinhaInteira">
+                <legend>Dados Pessoais</legend>
+
+                <div class="LinhaForm">
+                    <label class="LabBox" for="nome">Nome:</label>
+                    <input class="InpBoxGnd" id="nome" type="text" name="nome" required>
+                </div>
+
+                <div class="LinhaForm" id="linhaEnder">
+                    <label class="LabBox" for="endereco">Endereço:</label>
+                    <textarea class="InpBoxGnd" id="inpEnder" name="endereco"></textarea> 
+        </div>
+<br>
+                <div class="LinhaForm">
+                <br><br>    
+                    <div class="ColEsq">
+                        <label class="LabBox" for="telefone">Telefone:</label>
+                        <input class="InpBoxMed" id="telefone" type="text" name="telefone" required>
+                    </div>
+                    <div class="ColDir">
+                        <label class="LabBox" for="celular">Celular:</label>
+                        <input class="InpBoxMed" id="celular" type="text" name="celular" required>
+                    </div>
+                </div>
+<br><br>
+                <fieldset class="FSColEsq">
+                    <legend>Nascimento:</legend>
+                    <input class="numDD" id="dia" type="number" name="dia" min="1" max="31" placeholder="dd">
+
+                    /
+
+                    <input class="numDD" type="number" name="mes" min="1" max="12" placeholder="mm">
+
+                    /
+
+                    <input class="numQD" type="number" name="ano" min="1900" max="2026" placeholder="aaaa">
+                </fieldset>
+
+                <fieldset class="FSColDir">
+                    <legend>Sexo:</legend>
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Mas</label>
+                    <input type="radio" id="feminino" name="sexo" value="feminino">
+                    <label for="feminino">Fem</label>
+                    <input type="radio" id="outro" name="sexo" value="outro" checked>
+                    <label for="outro">Outro</label>
+                </fieldset>
+            </fieldset>
+
+            <div class="botoes">
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </div>
+        </div>
+        </form>
+    </section>
+
+</body>
+</html>
